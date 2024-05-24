@@ -13,6 +13,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      submodules: true
 
     - name: Run build script
       run: cmd /c build.bat
